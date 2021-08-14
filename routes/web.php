@@ -20,3 +20,7 @@ use Illuminate\Support\Facades\Route;
 //Route::post('/store',[SurveyController::class,'store']);
 
 Route::resource('survey',SurveyController::class);
+Route::get('/',function () {
+    return redirect('/survey');
+});
+
