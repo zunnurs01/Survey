@@ -15,12 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', [SurveyController::class, 'create'])->name('home');
-//Route::get('/results', [SurveyController::class, 'index'])->name('results');
-//Route::post('/store',[SurveyController::class,'store']);
-
 Route::resource('survey',SurveyController::class);
 Route::get('/',function () {
     return redirect('/survey');
 });
-
