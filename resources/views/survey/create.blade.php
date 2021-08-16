@@ -4,8 +4,7 @@
         <form action="/survey" method="post">
             @csrf
             @if ($errors->any())
-                <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
+                <div class="alert alert-danger" role="alert">
                     Please answer all questions.
                 </div>
             @endif
