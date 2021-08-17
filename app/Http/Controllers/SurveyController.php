@@ -100,7 +100,7 @@ class SurveyController extends Controller
                 $response->education_level = 'Secondary school and below';
             } elseif ($request['education_level'] == '6') {
                 $response->education_level = 'Diploma';
-            } elseif ($request['age_group'] == '7') {
+            } elseif ($request['education_level'] == '7') {
                 $response->education_level = 'Degree';
             } elseif ($request['education_level'] == '8') {
                 $response->education_level = 'Post graduate degree';
@@ -111,7 +111,7 @@ class SurveyController extends Controller
                 $response->monthly_income = 'Between RM1000 to RM3000';
             } elseif ($request['monthly_income'] == '11') {
                 $response->monthly_income = 'Between RM3000 to RM5000';
-            } elseif ($request['age_group'] == '12') {
+            } elseif ($request['monthly_income'] == '12') {
                 $response->monthly_income = 'More than RM5000';
             }
             if ($request['gender'] == '13') {
